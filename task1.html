@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title> The News</title>
+    <link href="https://fonts.googleapis.com/css2?family=Maven+Pro:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            color: rgb(2, 2, 29);
+            background-color: rgb(245, 245, 245);
+            
+        }
+
+        header {
+            text-align: left;
+            background-color: #0e192c;
+            color:rgb(204, 215, 233)
+            
+        }
+
+        .left{
+            display: inline-block;
+            text-align: center;
+        }
+        .left img{
+            position: relative;
+            width: 90px;
+            height: 100px;
+            display: block;
+            text-align: center;
+
+        }
+
+        .mid{
+            display:inline-block;
+            width:60%;
+            margin:25px auto;
+            top: 30px;
+            font-family: 'Baloo 2',cursive;
+
+        }
+        
+        .navbar{
+            display: flex;
+
+        }
+
+        .navbar li{
+            padding-top: 10px;
+            display: inline-block;
+            font-size: 18px;
+        }
+
+        .navbar li a{
+            color:rgb(251, 251, 252);
+            text-decoration: none;
+            padding: 34px 24px;
+        }
+
+        .navbar li a:hover,
+        .navbar li a.active {
+            text-decoration: underline;
+            color: brown;
+        }
+
+
+
+        .right{
+            display: inline-block;
+            
+        }
+
+        .right p input{
+            position: relative;
+            right: -129px;
+            display: inline-block;
+        }
+
+        footer{
+            background-color: #051a41;
+            color: aliceblue;
+        }
+
+        #world-news{
+            margin-top: 6px;
+            padding-left: 6px;
+            padding-top: 6px ;
+            padding-bottom: 6px;
+            opacity: 75%;
+            border-radius: 8px;
+            background-image: url("https://www.shutterstock.com/image-photo/earth-night-holding-human-hands-260nw-1063994879.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: auto ;
+            color: #e6ecec;
+            opacity: 5px;
+        }
+
+        #world-news:hover{
+            opacity: 100%;
+        }
+
+        #technology-news{
+            padding-left: 6px;
+            padding-top: 6px ;
+            padding-bottom: 6px;
+            opacity: 75%;
+            border-radius: 8px;
+            background-image: url("https://static.vecteezy.com/system/resources/thumbnails/002/174/574/small/hexagonal-abstract-technology-background-illustration-vector.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto ;
+            color: #e6ecec;
+            opacity: 5px;
+        }
+
+        #technology-news:hover{
+            opacity: 100%;
+        }
+
+        #sports-news{
+            padding-left: 6px;
+            padding-top: 6px ;
+            opacity: 75%;
+            padding-bottom: 6px;
+            border-radius: 8px;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRPeynrDxMlEb5nzft45kZumUs50uX97RMK1w&usqp=CAU");
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto ;
+            color: #e6ecec;
+            opacity: 5px;
+        }
+
+        #sports-news:hover{
+            opacity: 100%;
+        }
+
+        #entertainment-news{
+            padding-left: 6px;
+            padding-top: 6px ;
+            padding-bottom: 6px;
+            border-radius: 8px;
+            background-image: url("https://images.pexels.com/photos/2263436/pexels-photo-2263436.jpeg?cs=srgb&dl=pexels-teddy-yang-2263436.jpg&fm=jpg");
+            opacity: 75%;
+            background-repeat: no-repeat;
+            background-size: cover;
+            height: auto ;
+            color: #e6ecec;
+            opacity: 5px;
+        }
+
+        #entertainment-news:hover{
+            opacity: 100%;
+        }
+
+        .innerword{
+            font-family: 'Maven Pro', sans-serif;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        
+        <div class="left">
+            
+            <img src="https://cdn.dribbble.com/userupload/2795723/file/original-c45e7d0e27368537ae4f75becc9f9f7e.png?resize=1600x1200" alt="The News">
+            <strong>THE NEWS</strong> 
+
+        </div>
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#world-news">World News</a></li>
+                <li><a href="#technology-news">Technology News</a></li>
+                <li><a href="#sports-news">Sports News</a></li>
+                <li><a href="#entertainment-news">Entertainment News</a></li>
+            </ul>
+        </div>
+        <div class="right">
+            <p><input type="text" name="search" placeholder="search here"></p>
+            
+
+        </div>
+
+    
+</header>
+    
+    <main>
+        <section id="world-news">
+            <h2>World News</h2>
+            <p  class="innerword">Here are the latest updates on world news:</p>
+            <ul>
+                <li class="innerword">Breaking News: United Nations announces new peace initiative in the Middle East</li>
+                <li class="innerword">New President inaugurated in Africa after peaceful election</li>
+                <li class="innerword">European Union announces plans for a Green Deal to tackle climate change</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="technology-news">
+            <h2>Technology News</h2>
+            <p class="innerword">Here are the latest updates on technology news:</p>
+            <ul>
+                <li class="innerword">Apple unveils new iPhone with improved camera and longer battery life</li>
+                <li class="innerword">Microsoft announces plans for a new Surface laptop with foldable display</li>
+                <li class="innerword">Tesla introduces a new electric vehicle with autopilot features</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="sports-news">
+            <h2>Sports News</h2>
+            <p class="innerword">Here are the latest updates on sports news:</p>
+            <ul>
+                <li class="innerword">UEFA Champions League: Real Madrid wins final against Manchester City</li>
+                <li class="innerword">Serena Williams wins Australian Open Women's Singles Championship</li>
+                <li class="innerword">FIFA World Cup: Brazil wins against Argentina in the final</li>
+            </ul>
+        </section>
+        <hr>
+        <section id="entertainment-news">
+            <h2>Entertainment News</h2>
+            <p class="innerword">Here are the latest updates on entertainment news:</p>
+            <ul>
+                <li class="innerword">The Oscars: "Joker" wins Best Picture and Best Actor</li>
+                <li class="innerword">Pop star Justin Bieber announces new album and tour</li>
+                <li class="innerword">Disney announces plans for a new Star Wars film and television series</li>
+            </ul>
+            
+        </section>
+    </main>
+    <hr>
+    <footer>
+         <p>&copy; The News Website Pvt. Ltd. 2023</p>
+    </footer>
+</body>
+
+</html>
